@@ -1,38 +1,106 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📅 Solution de Gestion des Évènements
 
-## Getting Started
+## 📝 Description du Projet
 
-First, run the development server:
+Ce projet est une **solution informatique complète** visant à améliorer l’efficacité et la fluidité de la **gestion des évènements** au sein de la **Commune de Laâyoune**.  
 
+Il a été conçu pour **automatiser** les processus d’organisation, de suivi et de coordination des évènements, auparavant **complexes, chronophages et sujets à des erreurs** dues à la gestion manuelle.  
+
+L’application permet aux **administrateurs**, **gestionnaires** et **utilisateurs** d’interagir efficacement au sein d’une plateforme intuitive et performante.
+
+---
+
+## 🛠️ Technologies Utilisées
+
+| Catégorie | Technologie | Rôle dans le Projet |
+|------------|--------------|--------------------|
+| **Base de Données** | MongoDB | Base NoSQL orientée document, offrant flexibilité, scalabilité et hautes performances. |
+| **Frontend / Backend** | Next.js | Framework basé sur React, permettant le rendu côté serveur (SSR) et la génération statique pour des performances optimisées. |
+| **Styling** | Tailwind CSS | Framework CSS utility-first, facilitant un développement rapide et réactif. |
+| **Authentification** | Firebase Auth | Authentification sécurisée avec intégration facile de fournisseurs externes (Google, Facebook). |
+| **Gestion d’État** | Redux Toolkit | Centralisation et simplification de la gestion de l’état global de l’application. |
+| **UX / UI** | SweetAlert2 | Alertes, modales et confirmations modernes et personnalisables. |
+| **IDE** | Visual Studio Code | Environnement de développement complet avec intégration Git et extensions riches. |
+
+---
+
+## 🚀 Fonctionnalités Clés
+
+### 👨‍💼 Espace Administrateur / Gestionnaire
+- Authentification par nom d’utilisateur et mot de passe.  
+- **Gestion des Évènements :** création, modification et suppression.  
+- **Gestion des Gestionnaires :** ajout, modification et suppression de comptes.  
+- **Gestion des Partenaires :** administration des entités externes collaborant avec la commune.
+
+### 👥 Espace Utilisateur
+- **Authentification simplifiée :** via Google, Facebook ou manuellement.  
+- **Consultation :** accès à la liste des évènements et à leurs détails.  
+- **Inscription :** possibilité de s’inscrire à un ou plusieurs évènements après connexion.
+
+---
+
+## 💻 Installation et Lancement
+
+### ✅ Prérequis
+
+Assurez-vous d’avoir installé :
+- [Node.js](https://nodejs.org/) (version 18 ou supérieure)
+- npm ou yarn
+- Un serveur **MongoDB** (local ou distant)
+
+---
+
+### ⚙️ Étapes d’Installation
+
+#### 1️⃣ Cloner le dépôt
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone [https://github.com/YOUCEF54/Event-Management]
+cd [Event_Management]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 2️⃣ Installer les dépendances
+```bash
+npm install
+# ou
+yarn install
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#### 3️⃣ Configurer les variables d’environnement
+Créez un fichier **.env.local** à la racine du projet avec les informations suivantes :
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+MONGODB_URI=mongodb+srv://user:password@clustername/event_db
+NEXTAUTH_URL=http://localhost:3000
+FIREBASE_API_KEY=VOTRE_CLE_FIREBASE
+FIREBASE_AUTH_DOMAIN=VOTRE_DOMAINE_FIREBASE
+FIREBASE_PROJECT_ID=VOTRE_ID_FIREBASE
+FIREBASE_STORAGE_BUCKET=VOTRE_BUCKET
+FIREBASE_MESSAGING_SENDER_ID=VOTRE_SENDER_ID
+FIREBASE_APP_ID=VOTRE_APP_ID
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### 4️⃣ Lancer le serveur de développement
+```bash
+npm run dev
+# ou
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+L’application sera accessible à l’adresse :  
+👉 [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧑‍💻 Auteur
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Youssef El Omari**  
+🎓 Réalisé dans le cadre d’un **stage de Brevet de Technicien Supérieur (BTS)** en **Développement des Systèmes d’Information**  
+📍 **Commune de Laâyoune**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📜 Licence
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ce projet est libre d’utilisation à des fins éducatives et de démonstration.  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
